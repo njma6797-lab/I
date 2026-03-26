@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الدوسيه - محمد أحمد نجم</title>
+
+<!-- خط عربي فخم -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(135deg, #000000, #1c1c1c);
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    color: #00ffd5;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 20px rgba(0,255,213,0.2);
+}
+
+.item {
+    font-size: 18px;
+    margin: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 5px;
+}
+
+.arrow {
+    color: #00ffd5;
+    font-weight: bold;
+}
+
+a {
+    color: #00ffd5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #00ffd5;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#map {
+    margin-top: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="title">📁 الدُّوسِيِّهُ الشَّخْصِيُّ</div>
+
+<div class="card">
+
+<div class="item">الِاسْمُ <span class="arrow">←</span> مُحَمَّد أَحْمَد نَجْم</div>
+
+<div class="item">السِّنُّ <span class="arrow">←</span> ١٨ عَامًا</div>
+
+<div class="item">التَّعْلِيمُ <span class="arrow">←</span> Digital Marketing & Creative Ads</div>
+
+</div>
+
+<div class="card">
+
+<div class="item">📱 الرَّقْمُ <span class="arrow">←</span> 01211056530</div>
+<div class="item">📱 الرَّقْمُ <span class="arrow">←</span> 01206561893</div>
+
+<div class="item">📧 Gmail <span class="arrow">←</span> njma6797@gmail.com</div>
+
+</div>
+
+<div class="card">
+
+<div class="item">📘 فَيْسْبُوك <span class="arrow">←</span> 
+<a href="https://www.facebook.com/share/1GYYP7ZNSo/" target="_blank">اضْغَطْ هُنَا</a>
+</div>
+
+<div class="item">🎵 تِيكْ تُوك <span class="arrow">←</span> @negm.ah</div>
+
+<div class="item">✈️ تِلِجْرَام <span class="arrow">←</span> 
+<a href="https://t.me/ahnegm" target="_blank">اضْغَطْ هُنَا</a>
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="item">📍 مَوْقِعِي الحَالِي <span class="arrow">←</span></div>
+
+<button onclick="getLocation()">تَحْدِيدُ مَوْقِعِي الآن</button>
+
+<div id="map"></div>
+
+</div>
+
+</div>
+
+<script>
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        alert("المتصفح لا يدعم تحديد الموقع");
+    }
+}
+
+function showPosition(position) {
+    var lat = position.coords.latitude;
+    var lon = position.coords.longitude;
+
+    document.getElementById("map").innerHTML =
+    `<iframe
+        width="100%"
+        height="300"
+        src="https://maps.google.com/maps?q=${lat},${lon}&z=15&output=embed">
+    </iframe>`;
+}
+</script>
+
+</body>
+</html>
