@@ -3,151 +3,241 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>الدوسيه - محمد أحمد نجم</title>
 
-<!-- خط عربي فخم -->
+<!-- SEO -->
+<meta name="description" content="الموقع الرسمي لمحمد أحمد نجم - Digital Marketing & Creative Ads">
+<meta name="keywords" content="محمد نجم, تسويق رقمي, Digital Marketing, Creative Ads">
+<meta name="author" content="Mohamed Negm">
+
+<title>Mohamed Negm | Official</title>
+
+<!-- خط -->
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 body {
     margin: 0;
     font-family: 'Cairo', sans-serif;
-    background: linear-gradient(135deg, #000000, #1c1c1c);
-    color: #fff;
+    background: #0d0d0d;
+    color: white;
+    scroll-behavior: smooth;
 }
 
+/* هيدر */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg,#000,#1a1a1a);
+}
+
+.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #00ffd5;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px #00ffd5; }
+    to { box-shadow: 0 0 25px #00ffd5; }
+}
+
+.header h1 {
+    color: #00ffd5;
+}
+
+.header p {
+    color: #aaa;
+}
+
+/* كونتينر */
 .container {
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
     padding: 20px;
 }
 
-.title {
-    text-align: center;
-    font-size: 28px;
-    color: #00ffd5;
-    margin-bottom: 20px;
-}
-
+/* كروت */
 .card {
     background: rgba(255,255,255,0.05);
     border-radius: 15px;
     padding: 15px;
     margin-bottom: 15px;
     box-shadow: 0 0 20px rgba(0,255,213,0.2);
+    transition: 0.3s;
 }
 
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* عناصر */
 .item {
-    font-size: 18px;
     margin: 10px 0;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     padding-bottom: 5px;
 }
 
-.arrow {
-    color: #00ffd5;
-    font-weight: bold;
-}
-
+/* روابط */
 a {
     color: #00ffd5;
     text-decoration: none;
+    font-weight: bold;
 }
 
-a:hover {
-    text-decoration: underline;
+/* مهارات */
+.skill {
+    margin: 10px 0;
 }
 
+.bar {
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 8px;
+    background: #00ffd5;
+    animation: fillAnim 2s;
+}
+
+@keyframes fillAnim {
+    from { width: 0; }
+}
+
+/* زر */
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
+    background: #00ffd5;
     border: none;
     border-radius: 10px;
-    background: #00ffd5;
-    color: black;
     font-weight: bold;
     cursor: pointer;
+}
+
+/* خريطة */
+#map {
     margin-top: 10px;
 }
 
-#map {
-    margin-top: 10px;
-    border-radius: 15px;
-    overflow: hidden;
+/* PDF */
+.download {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download a {
+    padding: 12px 20px;
+    background: #00ffd5;
+    color: black;
+    border-radius: 10px;
+}
+
+/* فوتر */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #888;
+    font-size: 14px;
+}
+
+/* زر رجوع للأعلى */
+.top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #00ffd5;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 </style>
 </head>
 
 <body>
 
+<div class="header">
+<img src="profile.jpg" class="profile">
+<h1>مُحَمَّد أَحْمَد نَجْم</h1>
+<p>Digital Marketing | Creative Ads Specialist</p>
+</div>
+
 <div class="container">
 
-<div class="title">📁 الدُّوسِيِّهُ الشَّخْصِيُّ</div>
+<div class="card">
+<h3>📌 عَنِّي</h3>
+<p>أنا متخصص في التسويق الرقمي وصناعة الإعلانات الإبداعية وتحقيق نتائج قوية على السوشيال ميديا.</p>
+</div>
 
 <div class="card">
+<h3>📁 البَيَانَات</h3>
 
-<div class="item">الِاسْمُ <span class="arrow">←</span> مُحَمَّد أَحْمَد نَجْم</div>
-
-<div class="item">السِّنُّ <span class="arrow">←</span> ١٨ عَامًا</div>
-
-<div class="item">التَّعْلِيمُ <span class="arrow">←</span> Digital Marketing & Creative Ads</div>
+<div class="item">📞 <a href="tel:+2001211056530">اتصل الآن</a></div>
+<div class="item">📞 <a href="tel:+2001206561893">اتصل الآن</a></div>
+<div class="item">📧 <a href="mailto:njma6797@gmail.com">إرسال رسالة</a></div>
 
 </div>
 
 <div class="card">
+<h3>🔥 المَهَارَات</h3>
 
-<div class="item">📱 الرَّقْمُ <span class="arrow">←</span> 01211056530</div>
-<div class="item">📱 الرَّقْمُ <span class="arrow">←</span> 01206561893</div>
-
-<div class="item">📧 Gmail <span class="arrow">←</span> njma6797@gmail.com</div>
-
+<div class="skill">Digital Marketing
+<div class="bar"><div class="fill" style="width:90%"></div></div>
 </div>
 
-<div class="card">
-
-<div class="item">📘 فَيْسْبُوك <span class="arrow">←</span> 
-<a href="https://www.facebook.com/share/1GYYP7ZNSo/" target="_blank">اضْغَطْ هُنَا</a>
+<div class="skill">Creative Ads
+<div class="bar"><div class="fill" style="width:85%"></div></div>
 </div>
 
-<div class="item">🎵 تِيكْ تُوك <span class="arrow">←</span> @negm.ah</div>
-
-<div class="item">✈️ تِلِجْرَام <span class="arrow">←</span> 
-<a href="https://t.me/ahnegm" target="_blank">اضْغَطْ هُنَا</a>
+<div class="skill">Content Creation
+<div class="bar"><div class="fill" style="width:80%"></div></div>
 </div>
 
 </div>
 
 <div class="card">
+<h3>🌐 السوشيال</h3>
 
-<div class="item">📍 مَوْقِعِي الحَالِي <span class="arrow">←</span></div>
+<div class="item"><a href="https://www.facebook.com/share/1GYYP7ZNSo/" target="_blank">فيسبوك</a></div>
+<div class="item">تيك توك ← @negm.ah</div>
+<div class="item"><a href="https://t.me/ahnegm" target="_blank">تليجرام</a></div>
 
-<button onclick="getLocation()">تَحْدِيدُ مَوْقِعِي الآن</button>
+</div>
 
+<div class="card">
+<h3>📍 موقعي</h3>
+<button onclick="getLocation()">تحديد موقعي</button>
 <div id="map"></div>
+</div>
 
+<div class="download">
+<a href="cv.pdf" download>تحميل CV PDF</a>
 </div>
 
 </div>
+
+<div class="footer">
+جميع البيانات محفوظة لدى النجم ⭐<br><br>
+لعمل موقع احترافي تواصل على تليجرام 👇<br>
+<a href="https://t.me/ahnegm">اضغط هنا</a>
+</div>
+
+<div class="top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
 
 <script>
 function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        alert("المتصفح لا يدعم تحديد الموقع");
-    }
-}
+navigator.geolocation.getCurrentPosition(function(pos){
+let lat = pos.coords.latitude;
+let lon = pos.coords.longitude;
 
-function showPosition(position) {
-    var lat = position.coords.latitude;
-    var lon = position.coords.longitude;
-
-    document.getElementById("map").innerHTML =
-    `<iframe
-        width="100%"
-        height="300"
-        src="https://maps.google.com/maps?q=${lat},${lon}&z=15&output=embed">
-    </iframe>`;
+document.getElementById("map").innerHTML =
+`<iframe width="100%" height="300"
+src="https://maps.google.com/maps?q=${lat},${lon}&z=15&output=embed"></iframe>`;
+});
 }
 </script>
 
